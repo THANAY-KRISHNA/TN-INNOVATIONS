@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tn-innovations</title>
+    <title>TN INNOVATIONS</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'paper': '#FAF9F6',
+              'navy': '#001B3A',
+              'champagne': '#D4AF37',
+              'champagne-light': '#F7E7CE',
+              'text-primary': '#111827',
+              'text-secondary': '#4B5563',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            backgroundImage: {
+              'paper-texture': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M0 0h8v8H0z' fill='%23faf9f6'/%3E%3Cpath d='M0 0h1v8H0zM1 0h1v8H1z' fill='%23f5f4f0' fill-opacity='.5'/%3E%3C/svg%3E\")",
+            },
+            boxShadow: {
+              'elegant': '0 4px 20px -2px rgba(0, 27, 58, 0.05)',
+              'elegant-hover': '0 10px 30px -5px rgba(0, 27, 58, 0.1)',
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
